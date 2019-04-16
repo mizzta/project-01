@@ -109,7 +109,6 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-
 }
 
 body {
@@ -122,8 +121,8 @@ body {
 footer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: space-between;
+    align-content: space-between;
+
     background: #242424;
     color: white;
 }
@@ -157,7 +156,9 @@ li {
 
 .company-logo {
     display: flex;
-    max-width: 15%;
+    max-width: 12%;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-nav {
@@ -173,6 +174,7 @@ li {
 .shopping-cart {
     display: flex;
     max-width: 5%;
+    justify-content: center;
 }
 
 .banner {
@@ -206,6 +208,7 @@ li {
 
 .category {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-content: center;
     justify-content: center;
@@ -213,23 +216,70 @@ li {
 
 .item {
     display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 310px;
     justify-content: center;
     align-items: center;
+    text-align: center;
     text-transform: uppercase;
-    flex-grow: 2, 0;
+    font-size: 2rem;
+    color:white;
+    height: 250px;
+    margin: 3px;
 }
 
 .item:nth-child(1){
-  flex-basis: 50%;
+    background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2) ),
+                url(images/mens-category.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-basis: 40%;
 }
 
+.item:nth-child(2){
+    background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2) ),
+                url(images/trends-category.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
 
+.item:nth-child(3){
+    background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2) ),
+                url(images/glasses-category.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
 
+.item:nth-child(4){
+    background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2) ),
+                url(images/sale-category.jpg);
+    background-size: cover;
+    background-position: center;
+}
 
+.item:nth-child(5){
+    background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2) ),
+                url(images/bags-category.jpg);
+    background-size: cover;
+    background-position: center;
+}
 
+.item:nth-child(6){
+    background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2) ),
+                url(images/womens-category.jpg);
+    background-size: cover; 
+    background-position: center;
+    flex-grow: 2;
+    flex-basis: 40%;
 
-
-
+}
 
 .most-loved {
     display: flex;
@@ -249,6 +299,7 @@ li {
     justify-content: center;
     align-content: center;
     color: white;
+    position: relative;
 }
 
 .sign-up p {
@@ -269,6 +320,12 @@ li {
     padding: 10px;
     border-radius: 12px;
 }
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 
 /* Tablet */
