@@ -137,6 +137,7 @@ h1 {
 
 h2 {
     text-align: center;
+    font-family: 'Playfair Display'
 }
 
 p {
@@ -177,8 +178,7 @@ li {
     justify-content: flex-end;
     align-content: space-between;
     max-width: 100vw;
-    padding: 10px;
-    padding-bottom: 0px;
+    margin: auto;
 
 }
 .shopping-cart {
@@ -399,7 +399,7 @@ li {
 }
 
 .media span {
-    visibility: collapse;
+    display: none;
 
 }
 

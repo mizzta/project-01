@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const nameEl = document.getElementById('name');
     console.log(nameEl);
+    const name = prompt("Please enter a name");
     nameEl.innerHTML = name;
 
 
@@ -25,21 +26,30 @@ document.addEventListener("DOMContentLoaded", function () {
         // When the number of clicks reaches 10, add a second stage of evolution to the DOM!
         if (clicks === 10) {
 
-            // You choose the name of each additional stage.
-            currentStage = "small larvae";
+        // You choose the name of each additional stage.
+        currentStage = "small larvae";
         }
 
-        if (clicks > 10) {
-            currentStage = "2nd";
+        if (clicks === 20) {
+            currentStage = "Medium";
         }
 
-        if (clicks > 20) {
-            currentStage = "3rd";
+        if (clicks === 30) {
+            currentStage = "Larege";
         }
 
+        if (clicks === 40) {
+            currentStage = "Jumbo";
+        }
+
+        if (clicks === 50) {
+            currentStage = "Mega";
+            alert("Your creature has attained Saṃsāra.");
+        }
 
         console.log("clicks is now " + clicks);
         console.log("currentStage is now " + currentStage);
+
 
 
 
