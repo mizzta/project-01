@@ -105,6 +105,13 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    font-family: "Raleway", 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-size: 14px;
+    color: #2d2d2d;
+}
+
 header {
     display: flex;
     flex-wrap: wrap;
@@ -112,17 +119,7 @@ header {
     justify-content: space-between;
     align-items: center;
     max-width: 100%;
-    position: fixed;
-
-}
-
-body {
-    font-family: "Raleway", 'Times New Roman', Times, serif;
-    font-weight: lighter;
-    font-size: 14px;
-    color: #2d2d2d;
-    line-height: 2;
-    text-align: center;
+    height: 200px;
 }
 
 footer {
@@ -134,8 +131,8 @@ footer {
     background: #242424;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 h1, h2, h3 {
@@ -143,7 +140,6 @@ h1, h2, h3 {
     font-weight: lighter;
     text-align: center;
 }
-
 
 h2 .heading-italic {
     font-family: 'Playfair Display', Georgia, serif; 
@@ -159,13 +155,16 @@ h3 {
     color: #e2574c;
 }
 
+p {
+    line-height: 2;
+    text-align: center;
+    max-width: 340px;
+    margin: 0 auto;
+}
+
 a {
     color: #e2574c;
     text-decoration: none;
-}
-
-hr {
-    max-width: 100%;
 }
 
 img {
@@ -184,7 +183,8 @@ li {
 /* Header*/
 .company-logo {
     display: flex;
-    max-width: 22vw;
+    max-width: 100px;
+    height: 100px;
     justify-content: center;
     align-items: center;
 }
@@ -207,7 +207,8 @@ li {
 
 .shopping-cart {
     display: flex;
-    max-width: 12vw;
+    max-width: 40px;
+    height: 40px;
     justify-content: center;
 }
 
@@ -231,13 +232,13 @@ li {
 }
 
 .banner p {
+    font-weight: bold;
     text-transform: uppercase;
     text-align: center;
 }
 
 /* Main-text*/
 .main-text {
-    max-width: 320px;
     font-style: normal;
     text-align: center;
     word-wrap: normal;
@@ -372,10 +373,11 @@ li {
     background: black;
     color: white;
     font-size: 12px;
-    padding: 8px;
+    padding-top: 9px;
+    padding-bottom: 9px;
     padding-left: 14px;
     padding-right: 14px;
-    border-radius: 30px;
+    border-radius: 50px;
 }
 
 /* Sign-up Form */
@@ -384,19 +386,15 @@ li {
     height: 250px;
     background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2) ),
                 url(images/wave-bkgd.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
+    background-size: cover, contain stretch;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, bottom right;
     text-align: center;
     justify-content: center;
     align-content: center;
     color: white;
-
-}
-
-.sign-up p {
-    margin: 0 auto;
-    max-width: 340px;
+    padding-top: 50px;
+    padding-bottom: 300px;
 }
 
 .input-button {
@@ -419,7 +417,7 @@ li {
     padding: 10px;
     border-radius: 50px;
     position: absolute;
-    top: 12px;
+    top: 32px;
     right:100px;
 }
 
@@ -427,9 +425,7 @@ li {
 /* Footer */
 .container-footer {
     max-width: 100vw;
-    border-bottom: white solid 5px;
     border-top: white solid 5px;
-    
 }
 
 .company-detail {
@@ -468,6 +464,9 @@ li {
         font-size: 16px;
     }
 
+    p {
+        max-width: 500px;
+    }
 
     .company-logo
     {
@@ -572,8 +571,8 @@ li {
     .featured-6 {
         background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2) ),
                     url(images/womens-category.jpg);
-        background-size: cover;
-        background-position: center;
+        background-size: cover, cover;
+        background-position: center, center;
         flex-basis: 50%;
         justify-content: center;
         align-items: center;
@@ -596,19 +595,23 @@ li {
         margin-right: 0;
         text-align: center;
     }
-    /* change the width of the carousel-cell */
-
-
-
 
     .container-footer {
         display: flex;
         flex-direction: row;
     }
 
+    .media li {
+        display: flex;
+        flex-direction: column;
+    }
+
 /* Desktop */
 @media screen and (min-width:1240px) {
 
+    p {
+        max-width: 580px;
+    }
 
     .carousel-cell {
         width: 25%;
