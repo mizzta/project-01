@@ -12,3 +12,18 @@ A praragraph of text describing my project.
 '''
 
 ### H3
+
+
+shopping carts
+https://codepen.io/wanderval/pen/rqaRNB
+
+
+sticky header
+https://www.w3schools.com/howto/howto_js_sticky_header.asp
+
+
+text double space
+.classname {
+  line-height: 2 ;
+}
+https://www.thesitewizard.com/css/double-space-and-line-spacing.shtml
