@@ -115,11 +115,8 @@ body {
 header {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    max-width: 100%;
-    height: 200px;
+    align-items: center; 
 }
 
 footer {
@@ -162,9 +159,20 @@ p {
     margin: 0 auto;
 }
 
+hr
+{
+width: 96%;
+color: #d7d7d7;
+border: solid 0.5px;
+}
+
 a {
     color: #e2574c;
     text-decoration: none;
+}
+
+a:hover {
+    color: #b64036;
 }
 
 img {
@@ -178,38 +186,34 @@ li {
 .container {
     max-width: 1240px;
     margin: 0 auto;
+
 }
 
 /* Header*/
 .company-logo {
     display: flex;
     max-width: 100px;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
+    height: 45px;
+}
+
+.site-nav {
+    max-width: 100vw;
 }
 
 .nav {
-    max-width: 100%;
-    text-align: center;
+    margin: 0;
+    display: flex;
+    padding-left: 70px;
 }
 
 .main-nav {
     text-transform: uppercase;
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-content: space-between;
-    max-width: 100vw;
-    margin: auto;
-
 }
 
 .shopping-cart {
     display: flex;
     max-width: 40px;
     height: 40px;
-    justify-content: center;
 }
 
 /* Banner */
@@ -223,11 +227,12 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 12px;
 }
 
 .banner h1 {
     text-transform: capitalize;
-    font-size: 2.5rem;
+    font-size: 3em;
     text-align: center;
 }
 
@@ -380,8 +385,8 @@ li {
     border-radius: 50px;
 }
 
-/* Sign-up Form */
-.sign-up-form {
+/* Subscribe Form */
+.subscribe-form {
     position: relative;
     height: 250px;
     background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2) ),
@@ -397,13 +402,14 @@ li {
     padding-bottom: 300px;
 }
 
-.input-button {
+.text-button {
     position: relative;
     max-width: 100%;
     margin: auto;
+    text-align: center;
 }
 
-.sign-up-email-input {
+.subscribe-email-input {
     margin: 30px;
     width: 300px;
     padding: 12px;
@@ -418,7 +424,7 @@ li {
     border-radius: 50px;
     position: absolute;
     top: 32px;
-    right:100px;
+    right:35px;
 }
 
 
@@ -430,6 +436,7 @@ li {
 
 .company-detail {
     max-width: 100%;
+
 }
 .company-detail a {
     color: white;
@@ -445,7 +452,6 @@ li {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-
 }
 
 .media span {
@@ -464,10 +470,15 @@ li {
         font-size: 16px;
     }
 
+    hr {
+        display: none;
+    }
+
     p {
         max-width: 500px;
     }
 
+    /* Tablet menue */
     .company-logo
     {
         display: flex;
@@ -484,6 +495,7 @@ li {
         order: 3;
     }
 
+    /* Tablet Feature */
     .featured-1 {
         background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2) ),
                     url(images/mens-category.jpg);
@@ -585,6 +597,7 @@ li {
         border-right: 0;
     }
 
+    /* Tablet Carousel */
     .main-carousel {
         position: relative;
         z-index: 4;
@@ -596,15 +609,45 @@ li {
         text-align: center;
     }
 
+    .subscribe-button {
+        right: 232px;
+    }
+
+    /* Tablet Footer */
     .container-footer {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: unset;
     }
 
-    .media li {
+    .company-detail {
+        max-width: 60%;
+    }
+
+    .company-detail p {
+        text-align: left;
+    }
+
+    .media {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .media ul {
         display: flex;
         flex-direction: column;
+        max-width: 60%;
     }
+
+    .media span {
+        display: unset;
+        padding-left: 10px;
+        text-align: left;
+    }
+
 
 /* Desktop */
 @media screen and (min-width:1240px) {
@@ -616,6 +659,10 @@ li {
     .carousel-cell {
         width: 25%;
         }
+    }
+
+    .subscribe-button {
+        right: 290px;
     }
 
 }

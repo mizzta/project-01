@@ -1,29 +1,72 @@
 #ALoha Project 1
 
-A praragraph of text describing my project.
+##Personal Learnings
 
-- First list item
-- Second list item
+###HTML
+####Elements and attributes
+####Structuring a webpage
+####Form Element
 
-## My second section
+###CSS
+####The box model and block vs. inline elements
+####Classes and IDs
+####Color and backgrounds
+####CSS "resets"
+####Responsive Web Design
+  - how to create a responsive website
+####Mobile-first Design
+####Fonts
+  - how to use @font face
+####Flexbox
+ - Flexbox properties and values
 
-...
-<h1>Hello world</h1>
-'''
+###JavaScript Basics
+ - Variables
+ - Functions
+ - Arrays
 
-### H3
+###Command Line
+ - commands
 
+###Git
+ - Github
+ - how to add files
 
-shopping carts
-https://codepen.io/wanderval/pen/rqaRNB
+***
 
+## Technologies Used
 
-sticky header
-https://www.w3schools.com/howto/howto_js_sticky_header.asp
+###HTML
+ - syntax tag
+ - images
+ - List
+ - Links ( external & innternal )
+ - stylesheets
+ - Divs
+ - texts and headings
+ - Forms
+ - Brand Icons
 
+###CSS
+ - Background and color
+ - Blocks
+ - Flexbox
+ - @Font-face
+ - Font styles
+ - Text styles ( transform & align )
+ - Display functions
+ - Media Queries 
 
-text double space
-.classname {
+***
+
+##Reference
+
+- text double space
+<pre><code>.classname {
   line-height: 2 ;
 }
-https://www.thesitewizard.com/css/double-space-and-line-spacing.shtml
+https://www.thesitewizard.com/css/double-space-and-line-spacing.shtml</pre></code>
+
+- Email Validation 
+https://www.w3resource.com/javascript/form/email-validation.php
+https://stackoverflow.com/questions/46155/how-to-validate-an-email-address-in-javascript
