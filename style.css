@@ -166,7 +166,7 @@ h2 .heading-bold {
 }
 
 h3 {
-    color: #e2574c;
+    color: #db3a26;
 }
 
 p {
@@ -184,7 +184,7 @@ border: solid 0.5px;
 }
 
 a {
-    color: #e2574c;
+    color: #db3a26;
     text-decoration: none;
 }
 
@@ -518,7 +518,7 @@ li {
 }
 
 .subscribe-button {
-    background: #e2574c;
+    background: #db3a26;
     color: white;
     width: 100px;
     padding: 10px;
