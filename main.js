@@ -12,17 +12,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-  // Subscribe
-  const subscribeForm = document.getElementById("sub-btn");
-  subscribeForm.addEventListener("submit", function (event) {
+  // Subscription
+
+    const subscribe = document.getElementById("subscribe-form");
+    const inputText = document.getElementById("email");
+
+  subscribe.addEventListener("submit", function (event) {
     event.preventDefault();
-    if (inputText.mailformat = false) {
-      alert('Please entered an invalid email address!');
+    
+    let inputVal = inputText.value;
+
+    if (inputVal === "") {
+      alert('Please entered an valid email address!');
     } else {
       alert('Thank you for your subscribe!');
     }
-
-
+  
   });
 });
 //end of document ready
+
